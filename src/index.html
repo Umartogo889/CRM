@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en" class="dark:bg-slate-900">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo CRM</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/output.css" />
+  </head>
+  <body>
+    <div class="flex justify-center items-center w-full dark:bg-slate-900">
+      <div class="w-[1100px] flex flex-col justify-center">
+        <!--~-~-~-~-~-~-~-~-~-~- Header ~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-->
+        <header>
+          <nav
+            class="flex justify-between md:items-center relative top-8 sm:justify-between"
+          >
+            <!-- logo -->
+            <div class="relative left-4 flex h-[50px] sm:h-[40px] md:mt-1">
+              <img
+                src="./images/snow-svgrepo-com (1).svg"
+                class="w-[30px] mb-1 sm:mt-0 sm:w-[28px] mr-1 md:mt-1"
+                alt=""
+              />
+              <h1 class="font-medium text-4xl sm:text-3xl dark:text-slate-300">
+                Stage
+              </h1>
+            </div>
+            <!-- nav togger -->
+            <div class="absolute right-5 md:hidden top-2 sm:right-10">
+              <img
+                id="BtnMenu"
+                src="./images/menu-navigation-grid-1529-svgrepo-com.svg"
+                alt=""
+                class="text"
+              />
+            </div>
+            <!-- nav ul -->
+            <div id="ulNav" class="navTogger absolute left-56">
+              <div class="absolute top-5 md:hidden">
+                <!-- <i id="CloseBtn" class="ri-close-line"></i> -->
+              </div>
+              <ul
+                class="hidden md:display-block items-center absolute text-white text-[20px] md:text-[18px] md:left-[-10px] md:-mt-4 md:flex md:text-black dark:text-white"
+              >
+                <li id="navLink" class="nav-link"><a href="#"></a>Home</li>
+
+                <li id="navLink" class="nav-link"><a href="#"></a>Product</li>
+
+                <li id="navLink" class="nav-link"><a href="#"></a>Pricing</li>
+
+                <li id="navLink" class="nav-link"><a href="#"></a>Contact</li>
+              </ul>
+            </div>
+
+            <!-- nav btn  -->
+            <div class="hidden md:block">
+              <a href="#" class="font-medium mr-4 dark:text-white">Login</a>
+              <a
+                href="#"
+                class="font-medium rounded-md px-[20px] py-[8px] border border-black mr-3 dark:border-white dark:text-white duration-500  hover:bg-slate-800 hover:text-white dark:hover:bg-slate-500"
+                >Register</a
+              >
+            </div>
+            <img
+              id="Dark-icon"
+              class="absolute    sm:mt-1 right-14 mt-[4px] sm:right-24 md:right-[186px] cursor-pointer"
+              src="./images/night-light-svgrepo-com.svg"
+              alt=""
+            />
+            <img
+              id="light-icon"
+              class="absolute  sm:mt-1 right-[50px] mt-[4px] sm:right-24 md:right-[182px] cursor-pointer"
+              src="./images/light-svgrepo-com (1).svg"
+              alt=""
+            />
+          </nav>
+        </header>
+
+        <!--~-~-~-~-~-~-~-~-~-~- second section ~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-->
+
+        <div
+          class="sm:flex w-[270px] sm:mt-[50px] md:mt-[100px] left-10 md:left-12 absolute top-24 sm:relative md:justify-center md:w-full"
+        >
+          <!--~-~-~-~-~-~-~-~-~-~- Text block  ~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-->
+          <div class="text-black relative md:w-2/4">
+            <h1
+              class="text-[50px] w-[320px] sm:w-[300px] sm:text-[31px] md:text-[48px] md:w-[320px] font-medium text-black dark:text-white"
+            >
+              Mastermind Your Ultimate CRM Solution
+            </h1>
+            <p
+              class="text-slate-500 text-[17px] w-[320px] sm:text-[12px] md:w-[340px] md:text-[17px] sm:w-[62%] mt-5 dark:text-slate-400"
+            >
+              Streamline your customer managment with CRM, the Cutting edge CRM
+              software
+            </p>
+            <!-- btn  -->
+            <div class="my-5 w-[170px] select-none">
+              <a
+                class="flex items-center rounded-md bg-black text-white px-5 py-3 sm:px-5 sm:py-[10px]"
+                href="#"
+                >Get Started
+                <i id="arrowIcon" class="ri-arrow-right-line"></i>
+              </a>
+            </div>
+          </div>
+          <!--~-~-~-~-~-~-~-~-~-~- Information box   ~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-->
+
+          <div class="w-2/4 flex relative ml-5 sm:ml-0">
+            <div
+              class="absolute bg-red-600 top-0 w-[20%] h-[20%] right-[-100px] sm:right-16 blur-3xl sm:bg-red-300 md:mt-5 dark:bg-transparent"
+            ></div>
+            <!-- one card -->
+            <div
+              class="w-[180px] p-2 bottom-9 left-[-40px] md:w-[220px] shadow-md rounded-md sm:p-3 bg-[#fff] z-20 sm:right-4 sm:w-[180px] sm:bottom-12 absolute"
+            >
+              <div class="flex items-center">
+                <div
+                  class="h-[13px] sm:h-[15px] mr-3 w-2 rounded-sm bg-[#ffbc99]"
+                ></div>
+                <h2 class="text-[10px] md:text-xl font-bold">
+                  Refund requests
+                </h2>
+              </div>
+              <div class="flex items-center">
+                <div
+                  class="rounded-full left-0 h-[30px] w-[30px] bg-red-100 sm:left-0 sm:h-[40px] sm:w-[40px] justify-center items-center flex ml-2 mr-3 absolute"
+                >
+                  <img
+                    class="w-[15px] md:w-[20px]"
+                    src="./images/basket-shopping-svgrepo-com.svg"
+                    alt=""
+                  />
+                </div>
+                <p
+                  class="my-4 pl-10 text-[8px] sm:text-[10px] md:text-[13px] md:pl-12"
+                >
+                  <span class="text-slate-500">you have</span> 52 open refund
+                  requests
+                  <span class="text-slate-500">to active this includes </span>
+                  8 new requests
+                </p>
+              </div>
+              <div class="w-full flex justify-center items-center">
+                <button
+                  class="text-[13px] p-1 md:px-7 sm:py-[4px] rounded-md text-white m-auto bg-[#ff759c]"
+                >
+                  Review reurd requests
+                </button>
+              </div>
+            </div>
+            <!-- one card  end -->
+
+            <!-- two card  start-->
+            <div
+              class="z-10 mt-5 shadow-2xl h-[280px] sm:mt-0 rounded-md w-[400px] left-8 md:w-[350px] p-5 bg-[#fff] relative sm:right-5"
+            >
+              <div
+                class="justify-between flex relative items-center w-[230px] md:w-[320px]"
+              >
+                <div class="flex items-center">
+                  <div
+                    class="h-[22px] mr-3 w-2 sm:w-3 rounded-sm bg-[#cabdff]"
+                  ></div>
+                  <h2 class="text-[13px] font-medium md:text-xl">
+                    Product views
+                  </h2>
+                </div>
+                <select
+                  name=""
+                  id=""
+                  class="border w-[65px] md:w-[100px] md:text-[12px] cursor-pointer text-[9px] border-gray-200 outline-none py-1 rounded-md text-gray-400"
+                >
+                  <option value="">Last 7 Days</option>
+                  <option value="">Last 7 Days</option>
+                </select>
+              </div>
+              <!-- chart box start  -->
+
+              <div class="relative w-full h-[95%]">
+                <canvas
+                  class="absolute bottom-0 h-[100%]"
+                  id="BarChart"
+                ></canvas>
+              </div>
+            </div>
+            <!-- chart box end  -->
+            <div
+              class="absolute bottom-0 w-[10%] h-[20%] z-0 blur-3xl bg-red-400 dark:bg-transparent"
+            ></div>
+          </div>
+          <!-- two card  end -->
+        </div>
+        <!--~-~-~-~-~-~-~-~-~-~- three section ~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-->
+        <div class="flex justify-center items-end h-[820px] sm:h-[290px]">
+          <div
+            class="w-full flex justify-center items-center h-14 bg-gradient-to-r text-white from-indigo-500 via-purple-500 to-pink-500 ..."
+          >
+            <h1 class="text-center">
+              Streamline your customer management with CRM, the cutting-edge CRM
+              software.
+            </h1>
+          </div>
+        </div>
+
+        <div
+          class="flex justify-center items-center mt-5 sm:mt-[50px] md:mt-[70px]"
+        >
+          <div class="flex flex-col justify-center items-center">
+            <h1
+              class="text-center text-[40px] sm:text-[40px] font-medium dark:text-white"
+            >
+              Key Features and Benefits
+            </h1>
+            <p class="w-[300px] sm:w-[320px] text-center text-slate-400">
+              streamline your customer management with CRM Mastermind
+            </p>
+          </div>
+        </div>
+
+        <div class="justify-center items-center flex mt-4">
+          <div class="flex gap-2">
+            <button
+              id="ClientBtn"
+              class="clientBtn border border-blue-600 px-4 text-[11px] py-1 sm:text-[15px] rounded-md dark:text-white"
+            >
+              SMALL BUSINESS
+            </button>
+            <button
+              id="ClientBtn"
+              class="border border-blue-600 px-4 text-[11px] py-1 sm:text-[15px] rounded-md dark:text-white"
+            >
+              SALES CLOUD
+            </button>
+            <button
+              id="ClientBtn"
+              class="border border-blue-600 px-4 text-[11px] py-1 sm:text-[15px] rounded-md dark:text-white"
+            >
+              SERVICE CLOUD
+            </button>
+          </div>
+        </div>
+        <!--~-~-~-~-~-~-~-~-~-~- Four section ~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-->
+        <div class="w-full justify-center items-center flex">
+          <div
+            class="w-[99%] sm:w-[90%] bg-[#e1e4ec] h-[600px] sm:h-[320px] md:h-[400px] rounded-3xl mt-16 relative flex flex-col sm:flex-row justify-center items-center"
+          >
+            <div
+              id="chartBox"
+              class="flex flex-col justify-center items-center bg-white absolute left-[-22.5px] top-[30px] sm:inset-[-10px] sm:relative sm:top-[10px] h-[250px] md:h-[300px] w-[90%] sm:w-2/4 ml-10 rounded-lg"
+            >
+              <div class="flex w-[90%] mt-3 justify-between mb-[18px]">
+                <h1 class="text-[15px] font-medium">Analytics</h1>
+                <div
+                  class="border items-center px-2 py-1 border-slate-500 flex rounded-md overflow-hidden select-none"
+                >
+                  <img
+                    id="CalendarIcon"
+                    src="./images/date-range-svgrepo-com.svg"
+                    alt=""
+                  />
+                  <select
+                    class="outline-none text-slate-700 bg-transparent w-[85%] text-[10px] font-medium"
+                  >
+                    <option class="flex gap-2">
+                      <p>5 Aug -25 Aug</p>
+                    </option>
+                    <option value="" class="flex gap-2">
+                      <img src="./images/date-range-svgrepo-com.svg" alt="" />
+                      <p>19 Aug -25 Aug</p>
+                    </option>
+                    <option value="" class="flex gap-2">
+                      <img src="./images/date-range-svgrepo-com.svg" alt="" />
+                      <p>19 Aug -25 Aug</p>
+                    </option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- line chart section  -->
+              <div class="flex justify-center items-center h-full w-full mb-4">
+                <div class="relative w-[98%] h-[100%]">
+                  <canvas id="LineChart"></canvas>
+                </div>
+              </div>
+            </div>
+            <div
+              id="text-block"
+              class="w-full left-[-12px] relative sm:mt-0 pl-5 sm:w-2/4 flex flex-col mt-[250px] items-center sm:items-start right"
+            >
+              <h1 class="text-[30px] font-medium sm:text-[25px] md:text-[35px]">
+                Unparalleled Efficiency
+              </h1>
+              <p
+                class="text-slate-400 text-center mt-3 w-[310px] sm:w-[250px] sm:text-[10px] md:w-[340px] md:text-[16px] sm:text-start"
+              >
+                CRM software that empowers businesses to forge meaningful
+                connections with customers
+              </p>
+              <div
+                class="flex items-center border rounded-md border-slate-400 mt-3 px-2 py-1 sm:text-[13px] font-medium cursor-pointer"
+              >
+                <img
+                  src="./images/exclamation-circle-svgrepo-com.svg"
+                  class="mr-2 w-[20px]"
+                  alt=""
+                />
+                contact Monagement
+              </div>
+
+              <div
+                class="flex cursor-pointer border rounded-md border-slate-400 px-2 py-1 sm:text-[13px] mt-3 font-medium"
+              >
+                <img
+                  src="./images/home-svgrepo-com.svg"
+                  class="mr-2 w-[20px]"
+                  alt=""
+                />
+                Sales Automation
+              </div>
+            </div>
+          </div>
+        </div>
+        <br /><br />
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/charts.js"></script>
+  </body>
+</html>
